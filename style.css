@@ -17,7 +17,9 @@ body,html {
   align-items: center;
   justify-content: center;
 }
-
+.highlight {
+  background-color: yellow; /* Highlight color */
+}
 .key {
   border: .4rem solid black;
   border-radius: .5rem;
