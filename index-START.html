@@ -58,47 +58,44 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-
-
-const key_s = document.querySelectorAll('.key');
-  document.addEventListener('click', function(event) {
-          // Remove highlight from all boxes
-    key_s.forEach(a_key => a_key.classList.remove('highlight'));
-    switch (event) {
-        case 'a':
-            key_s[0].classList.add('highlight'); // Highlight Box 1
-            break;
-        case 's':
-            key_s[1].classList.add('highlight'); // Highlight Box 2
-            break;
-        case 'd':
-            key_s[2].classList.add('highlight'); // Highlight Box 3
-            break;
-        case 'f':
-            key_s[3].classList.add('highlight'); // Highlight Box 4
-            break;
-        case 'g':
-            key_s[4].classList.add('highlight'); // Highlight Box 3
-            break ;
-        case 'h':
-            key_s[5].classList.add('highlight'); // Highlight Box 4
-            break;
-        case 'j':
-            key_s[6].classList.add('highlight'); // Highlight Box 3
-            break;
-        case 'k':
-            key_s[7].classList.add('highlight'); // Highlight Box 4
-            break;
-        case 'l':
-            key_s[8].classList.add('highlight'); // Highlight Box 4
-            break;
-        default:
-            console.log('please press the shown keys');
-    }
-});
-</script>
-
-
+  <script>
+    const key_s = document.querySelectorAll('.key');
+    document.addEventListener('keydown', function(event) {
+            // Remove highlight from all boxes
+      key_s.forEach(a_key => a_key.classList.remove('highlight'));
+      switch (event.key) {
+          case 'a':
+              key_s[0].classList.add('highlight'); // Highlight Box 1
+              break;
+          case 's':
+              key_s[1].classList.add('highlight'); // Highlight Box 2
+              break;
+          case 'd':
+              key_s[2].classList.add('highlight'); // Highlight Box 3
+              break;
+          case 'f':
+              key_s[3].classList.add('highlight'); // Highlight Box 4
+              break;
+          case 'g':
+              key_s[4].classList.add('highlight'); // Highlight Box 3
+              break ;
+          case 'h':
+              key_s[5].classList.add('highlight'); // Highlight Box 4
+              break;
+          case 'j':
+              key_s[6].classList.add('highlight'); // Highlight Box 3
+              break;
+          case 'k':
+              key_s[7].classList.add('highlight'); // Highlight Box 4
+              break;
+          case 'l':
+              key_s[8].classList.add('highlight'); // Highlight Box 4
+              break;
+          default:
+              console.log('please press the shown keys');
+      }
+  });
+  </script>
+  
 </body>
 </html>
